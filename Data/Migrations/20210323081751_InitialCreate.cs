@@ -14,9 +14,7 @@ namespace SocialFirstApi.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     UserName = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true),
-                    PasswordHash = table.Column<byte>(nullable: false),
-                    PasswordSalt = table.Column<byte>(nullable: false)
+                    Password = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

@@ -50,3 +50,11 @@ C:\Users\LEO\Documents\c#\SocialFirstApi\obj\Debug\net5.0\SocialFirstApi.dll
 C:\Users\LEO\Documents\c#\SocialFirstApi\obj\Debug\net5.0\ref\SocialFirstApi.dll
 C:\Users\LEO\Documents\c#\SocialFirstApi\obj\Debug\net5.0\SocialFirstApi.pdb
 C:\Users\LEO\Documents\c#\SocialFirstApi\obj\Debug\net5.0\SocialFirstApi.genruntimeconfig.cache
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\angular.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\e2e\tsconfig.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\package-lock.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\package.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tsconfig.app.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tsconfig.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tsconfig.spec.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tslint.json

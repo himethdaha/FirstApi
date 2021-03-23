@@ -8,7 +8,7 @@ using SocialFirstApi.Data;
 namespace SocialFirstApi.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210322211208_InitialCreate")]
+    [Migration("20210323081751_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,12 +26,6 @@ namespace SocialFirstApi.Data.Migrations
 
                     b.Property<string>("Password")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<byte>("PasswordHash")
-                        .HasColumnType("tinyint unsigned");
-
-                    b.Property<byte>("PasswordSalt")
-                        .HasColumnType("tinyint unsigned");
 
                     b.Property<string>("UserName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");

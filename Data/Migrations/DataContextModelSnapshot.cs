@@ -25,12 +25,6 @@ namespace SocialFirstApi.Data.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<byte>("PasswordHash")
-                        .HasColumnType("tinyint unsigned");
-
-                    b.Property<byte>("PasswordSalt")
-                        .HasColumnType("tinyint unsigned");
-
                     b.Property<string>("UserName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
