@@ -58,3 +58,10 @@ C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tsconfig.app.js
 C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tsconfig.json
 C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tsconfig.spec.json
 C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\client\tslint.json
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LEO\Documents\c#\SocialFirstApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

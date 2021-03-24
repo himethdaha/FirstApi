@@ -13,6 +13,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SocialFirstApi.Interfaces;
+using SocialFirstApi.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using SocialFirstApi.Extensions;
 
 namespace SocialFirstApi
 {
@@ -28,14 +34,8 @@ namespace SocialFirstApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Adding the connection string for our database
-            //AddDbContext<DataContext - Name of the class we created that's derived from DbContext
-            /* => is a lamda function. Options is the parameter to which
-             we pass the statements to inside te curly brackets*/
-            //Inside UseMySql goes te "DefaultConnection" string
-            services.AddDbContext<DataContext>(options
-                   => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
-             
+            //DbContext, Database dependency injection and Scoped
+            services.AddApplicationServices(Configuration);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,6 +44,9 @@ namespace SocialFirstApi
 
             //Securtiy measurement
             services.AddCors();
+            //All Authentication and JWT services
+            services.AddIdentityServices(Configuration);
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +65,7 @@ namespace SocialFirstApi
             app.UseRouting();
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200") );
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

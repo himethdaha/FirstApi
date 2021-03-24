@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SocialFirstApi.Data;
 using SocialFirstApi.Entities;
@@ -30,6 +31,7 @@ namespace SocialFirstApi.Controllers
          when a request is made to the database that thread is blocked 
         until the database fullfills the request*/
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsersAsync()
         {
             var users = await _context.Users.ToListAsync();
@@ -40,6 +42,7 @@ namespace SocialFirstApi.Controllers
         //"{id}" - Root Parameter
         //When they hit this endpoint - api/users/{id}
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
